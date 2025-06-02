@@ -1,0 +1,269 @@
+/* Custom styles to override main.css */
+
+/* Make sidebar narrower and remove main content width limit */
+#header {
+    width: 25% !important;
+}
+
+#main {
+    margin-left: 25% !important;
+    width: calc(100% - 25%) !important;
+    padding: 3em 3em 2em 3em !important;
+    max-width: none !important; /* Remove the 54em width limit */
+}
+
+/* Improve text readability and increase font sizes */
+body, input, select, textarea {
+    color: #333333 !important;
+    font-size: 17px !important;
+    line-height: 1.6 !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #222222 !important;
+    font-weight: 600 !important;
+}
+
+h2 {
+    font-size: 2.0em !important;
+    margin-bottom: 1.5em !important;
+    border-bottom: 2px solid #f0f0f0 !important;
+    padding-bottom: 0.5em !important;
+}
+
+strong, b {
+    color: #111111 !important;
+    font-weight: 600 !important;
+}
+
+p {
+    color: #444444 !important;
+    font-size: 17px !important;
+    line-height: 1.7 !important;
+    margin-bottom: 1.3em !important;
+}
+
+/* Education section with cards */
+.education-item {
+    margin-bottom: 25px !important;
+    padding: 25px !important;
+    border-left: 4px solid #49bf9d !important;
+    padding-left: 25px !important;
+    background-color: #fafafa !important;
+    border-radius: 6px !important;
+}
+
+.education-item .degree {
+    font-size: 1.2em !important;
+    color: #222222 !important;
+    font-weight: 600 !important;
+    margin-bottom: 8px !important;
+}
+
+.education-item .institution {
+    color: #666666 !important;
+    font-size: 1.1em !important;
+    margin-bottom: 5px !important;
+}
+
+.education-item .duration {
+    color: #888888 !important;
+    font-size: 1.0em !important;
+    font-style: italic !important;
+}
+
+/* Experience section with cards */
+.experience-item {
+    margin-bottom: 30px !important;
+    padding: 25px !important;
+    background-color: #f8f9fa !important;
+    border-radius: 8px !important;
+    border-left: 4px solid #49bf9d !important;
+}
+
+.experience-item .position {
+    font-size: 1.2em !important;
+    color: #222222 !important;
+    font-weight: 600 !important;
+    margin-bottom: 8px !important;
+}
+
+.experience-item .company {
+    color: #666666 !important;
+    font-size: 1.1em !important;
+    margin-bottom: 5px !important;
+}
+
+.experience-item .duration {
+    color: #888888 !important;
+    font-size: 1.0em !important;
+    font-style: italic !important;
+    margin-bottom: 12px !important;
+}
+
+.experience-item .description {
+    color: #555555 !important;
+    font-size: 1.0em !important;
+    line-height: 1.6 !important;
+}
+
+/* Teaching section */
+.teaching-item {
+    margin-bottom: 20px !important;
+    padding: 20px 25px !important;
+    background-color: #f0f8ff !important;
+    border-radius: 6px !important;
+    border-left: 4px solid #49bf9d !important;
+}
+
+.teaching-item .role {
+    font-size: 1.2em !important;
+    color: #222222 !important;
+    font-weight: 600 !important;
+    margin-bottom: 8px !important;
+}
+
+.teaching-item .course {
+    color: #666666 !important;
+    font-size: 1.1em !important;
+}
+
+/* Publication improvements - 更大图片，充分利用空间 */
+.publication-item {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 50px;
+    padding: 35px 0;
+    border-bottom: 1px solid #eeeeee;
+    align-items: flex-start;
+    gap: 30px; /* 使用gap替代margin来更好控制间距 */
+}
+
+.publication-item:last-child {
+    border-bottom: none;
+}
+
+.publication-image {
+    flex-shrink: 0;
+    width: 380px; /* 进一步增大图片宽度 */
+    height: 240px; /* 进一步增大图片高度 */
+    margin-left: 0; /* 移除margin，使用gap */
+    margin-right: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.publication-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-color: #ffffff;
+}
+
+.publication-content {
+    flex: 1;
+    padding-right: 0; /* 移除padding，使用gap */
+    min-width: 0; /* 允许内容收缩 */
+}
+
+.publication-content h4 {
+    margin-bottom: 10px !important;
+    color: #222222 !important;
+    font-size: 1.25em !important;
+    line-height: 1.3em !important;
+    font-weight: 600 !important;
+    word-wrap: break-word !important;
+    hyphens: auto !important;
+}
+
+.publication-content .authors {
+    color: #666666 !important;
+    margin-bottom: 8px !important;
+    font-size: 1.05em;
+    line-height: 1.4 !important;
+}
+
+.publication-content .venue {
+    color: #888888 !important;
+    margin-bottom: 12px !important;
+    font-style: italic;
+    font-size: 1.0em;
+    font-weight: 500 !important;
+}
+
+.publication-content .links a {
+    color: #49bf9d !important;
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 1.0em;
+    font-weight: 500 !important;
+    padding: 8px 15px !important;
+    border: 1px solid #49bf9d !important;
+    border-radius: 4px !important;
+    transition: all 0.3s ease !important;
+}
+
+.publication-content .links a:hover {
+    background-color: #49bf9d !important;
+    color: #ffffff !important;
+}
+
+/* About me section */
+#one p {
+    font-size: 18px !important;
+    line-height: 1.8 !important;
+    text-align: justify !important;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 1280px) {
+    #header {
+        width: 30% !important;
+    }
+    
+    #main {
+        margin-left: 30% !important;
+        width: calc(100% - 30%) !important;
+        padding: 2.5em 2.5em 1.5em 2.5em !important;
+    }
+    
+    .publication-image {
+        width: 320px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .publication-item {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .publication-image {
+        width: 100%;
+        height: 250px;
+        margin-left: 0;
+        margin-bottom: 25px;
+        order: -1;
+    }
+    
+    .publication-content {
+        padding-right: 0;
+    }
+    
+    #main {
+        padding: 2em 2em 1em 2em !important;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    .publication-image {
+        height: 180px;
+    }
+    
+    #main {
+        padding: 1.5em 1.5em 1em 1.5em !important;
+    }
+} 
